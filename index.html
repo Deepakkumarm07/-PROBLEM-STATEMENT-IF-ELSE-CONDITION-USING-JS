@@ -1,42 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>this is my profile</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       
-        <nav>
-            <a onclick="Projects()">Projects||</a>
-            <a onclick="Gmail()">Gmail||</a>
-            <a onclick="Contacts()">Contacts||</a>
-            <a onclick="About()">About me||</a>
-            <a onclick="Home()">Home||</a>
-        </nav>
-        <h1 id="he">
-            Welcome to Profile Page!!!!
-        </h1>
-        
-            
-        </ul>
-        <script>
-        function About(){
-            var h=document.getElementById("he")
-            h.textContent = "hi i am deepakkumar . i'm interested in the cybersecurity field.I finished my schooling in Sri Ramana Vidyala at 2022 as of now i am doing college in st joseph college of engineering at chennai and also i doing internship at techiedudes . I studied python,basics html,css,js  " 
-            return
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        let n = prompt("enter length")
+        let arr = []
+        let temp = []
+        let count = 0
+        for(i;i<parseInt(n);i++){
+            arr[i] = prompt("enter"+i+"element")
+
         }
-        function Projects(){
-           
-            const cr = document.createElement("p")
-            cr.innerHTML="<p>I done several simple basic projects like:::</p><ul><li><p>Sample Websites using html,css</p></li><li><p>small games using python</p></li><li><p>build token</p></li></ul>"
-            h = document.getElementById("he").append(cr)
-            return
+        console.log(arr)
+        console.log(typeof(arr))
+        for(i=0;i<parseInt(n);i++){
+            if(arr[i]!=0){
+                temp.push(parseInt(arr[i]))
+             
+            }
+            else{
+            count++
+            }
         }
-        function Gmail(){
-            var 
+        for(i=0;i<count;i++){
+            temp.push(0)
         }
+        console.log(temp)
+
+
+         
         
-        </script>
-        
-    </body>
+    </script>
+</body>
 </html>
