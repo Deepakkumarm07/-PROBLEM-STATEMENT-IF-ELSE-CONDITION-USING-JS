@@ -1,25 +1,42 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        function cube(){
-            let sum = 0
-            let m = prompt()
-            let n = prompt()
-            if(m>n){
-                console.log(0)
-            }
-            for(m;m<=n;m++){
-                sum += m*m*m
-               
-            }
-            console.log(sum)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is my profile</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+        <nav>
+            <a onclick="Projects()">Projects||</a>
+            <a onclick="Gmail()">Gmail||</a>
+            <a onclick="Contacts()">Contacts||</a>
+            <a onclick="About()">About me||</a>
+            <a onclick="Home()">Home||</a>
+        </nav>
+        <h1 id="he">
+            Welcome to Profile Page!!!!
+        </h1>
+        
+            
+        </ul>
+        <script>
+        function About(){
+            var h=document.getElementById("he")
+            h.textContent = "hi i am deepakkumar . i'm interested in the cybersecurity field.I finished my schooling in Sri Ramana Vidyala at 2022 as of now i am doing college in st joseph college of engineering at chennai and also i doing internship at techiedudes . I studied python,basics html,css,js  " 
+            return
         }
-        cube()
-    </script>
-</body>
+        function Projects(){
+           
+            const cr = document.createElement("p")
+            cr.innerHTML="<p>I done several simple basic projects like:::</p><ul><li><p>Sample Websites using html,css</p></li><li><p>small games using python</p></li><li><p>build token</p></li></ul>"
+            h = document.getElementById("he").append(cr)
+            return
+        }
+        function Gmail(){
+            var 
+        }
+        
+        </script>
+        
+    </body>
 </html>
