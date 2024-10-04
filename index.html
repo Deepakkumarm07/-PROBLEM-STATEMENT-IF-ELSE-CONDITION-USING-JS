@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        let n = prompt("enter length")
+        let arr = []
+        let temp = []
+        let count = 0
+        for(i;i<parseInt(n);i++){
+            arr[i] = prompt("enter"+i+"element")
+
+        }
+        console.log(arr)
+        console.log(typeof(arr))
+        for(i=0;i<parseInt(n);i++){
+            if(arr[i]!=0){
+                temp.push(parseInt(arr[i]))
+             
+            }
+            else{
+            count++
+            }
+        }
+        for(i=0;i<count;i++){
+            temp.push(0)
+        }
+        console.log(temp)
+        console.log(count)
+
+
+         
+        
+    </script>
+</body>
+</html>
